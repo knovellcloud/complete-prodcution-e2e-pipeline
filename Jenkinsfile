@@ -12,9 +12,6 @@ pipeline {
                 cleanWs()
             }
         }
-    }
-
-    stages {
         stage("Checkout from SCM") {
             steps {
                 git branch: 'main',  url: 'https://github.com/knovellcloud/complete-prodcution-e2e-pipeline'
